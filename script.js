@@ -36,11 +36,8 @@ for(let i = 0; i < productImg.length; i++) {
     })
 }
 
-popUp.addEventListener('click', function(){
-    this.style.display = "none";
-})
-
 document.querySelector(".account").onclick = () => {
     mini.style.display = mini.style.display === "block" ? "none" : "block";
     caret.classList.toggle('active');
+    console.log('clicked')
 }

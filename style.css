@@ -1,4 +1,5 @@
- @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;0,900;1,600&display=swap');
 
 
 body{
@@ -7,6 +8,7 @@ body{
     height: 100vh;
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
 
 a{
@@ -16,7 +18,10 @@ a{
 ul{
     list-style-type: none;
 }
-
+.cont{
+    /* background-color: aqua; */
+    overflow: hidden;
+}
 .caret {
    font-size: 1rem;
    display: inline-block;
@@ -65,16 +70,27 @@ ul{
     animation-duration: 1s;
 }
 
+#first{
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
 #first-img{
-    width: 30rem;
+    width: 100%;
     background-size: cover;
     background-position: center;
 }
 
 .first-section{
-    width: 90%;
+    width: 80%;
     margin: 2rem auto;
-    margin-top: -4rem;
+    margin-top: -1rem;
+}
+
+.second-section{
+    width: 80%;
+    margin: 2rem auto;
 }
 
 #second-img{
@@ -95,6 +111,8 @@ ul{
 }
 
 .head{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
     width: 100%;
     background: transparent;
     z-index: 10;
@@ -105,13 +123,14 @@ ul{
 }
 
 .hero-p{
-    line-height: 1.5rem;
-    font-size: 1.1rem;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 
 .hero-text{
     color: white;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 3rem;
 }
 
@@ -127,7 +146,7 @@ ul{
 
 .hero-text-two{
     color: white;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 2.5rem;
 }
 
@@ -151,7 +170,7 @@ ul{
 }
 
 .main-section{
-    width: 80%;
+    width: 100%;
     position: relative;
     display: inline-block;
     background:transparent;
@@ -268,17 +287,11 @@ ul{
     display: inline-block;
 }
 
-.side-bar{
-    background-color: brown;
-    margin-left: auto;
-    display: none;
-}
-
 .side-navigation{
     height:100vh;
     width: 40%;
     position: fixed;
-    margin-left: -260px;
+    margin-left: -250px;
     background: url(./assets/menu.jpg);
     background-size: cover;
     background-position: center;
@@ -315,24 +328,7 @@ ul{
     animation-duration: 1s;
 }
 
-@media screen and (max-width: 600px){
-    .side-bar{
-    }
-    .side-navigation{
-
-        /* display: none !important; */
-    }
-    .log{
-    }
-    .menu{
-    }
-    .logo{
-    }
-}
 @media (min-width:640px){
-    .side-bar{
-        display: none;
-    }
     .side-navigation{
         width: 30%;
     }
@@ -347,15 +343,51 @@ ul{
         text-align: center;
         margin: auto;
     }
-    .product{
-        max-width: 30%;
-        margin-bottom: 2%;
-        font-size: 1rem;
-    }
 }
-@media (min-width:768px){
-    .side-bar{
-        display: none;
+@media (min-width:850px){
+    .first-section{
+        width: 95%;
+        margin-top: -4rem;
+    }
+    .second-section{
+        margin-top: 10rem;
+        width: 95%;
+    }
+    .hero-header{
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    .hero-header-two{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .hero-p{
+        margin-top: 2rem;
+        line-height: 2rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    .hero-text{
+        width: 50%;
+        /* background-color: #41424c; */
+    }
+    .hero-text-two{
+        width: 50%;
+    }
+    #first{
+        width: 50%;
+    }
+    .second-section{
+        display: flex;
+    }
+    #second{
+        width: 50%;
+        margin-top: auto;
+        /* background-color: antiquewhite; */
+    }
+    #second-img{
+        display: block;
+        width: 100%;
     }
     .log{
         display: none;
@@ -380,32 +412,12 @@ ul{
     }
 }
 @media (min-width:1024px){
-    .side-bar{
-        display: inline-block;
-    }
-    .hamburger{
-        display: none;
-    }
     .side-navigation{
         width: 20%;
-        margin-left: 0px;
         position: fixed;
+        margin-left: -350px;
     }
-    .log{
-        display: inline-block;
-        width: 48%;
-        float: right;
-        padding-top: 10px;
-    }
-    .logo{
-        text-align: center;
-        display: inline-block;
-        font-size: 2.5rem;
-        font-weight: bolder;
-        color: var(--black);
-        margin-left: 8%;
-        width: 40%;
-    }
+
     .product{
         width: 24%;
         margin-bottom: 1%;
@@ -413,36 +425,24 @@ ul{
     }
     .main-section{
         width: 80%;
-        margin-left: 20%;
     }
 }
-@media (min-width:1280px){
-    .side-bar{
-        display: inline-block;
+@media (min-width:1700px){
+    body{
+        padding: 0 15%;
     }
     .side-navigation{
         width: 15%;
         position: fixed;
+        margin-left: -650px;
     }
-    .log{
-        display: inline-block;
-        float: right;
-        padding-top: 10px;
-
-    }
-    .logo{
-        text-align: right;
-        display: inline-block;
-        font-size: 2.5rem;
-        font-weight: bolder;
-        width: 25%;
-        margin-left: 1%;
-    }
-    .product{
-        width: 19%;
+    .first-section{
+        /* background-color: aqua; */
     }
     .main-section{
         width: 85%;
-        margin-left: 15%;
+    }
+    .side-navigation.active{
+        transition: 1s linear;
     }
 }

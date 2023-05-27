@@ -8,6 +8,8 @@ body{
     height: 100vh;
     background-size: cover;
     background-position: center;
+    display: flex;
+    /* flex-direction: column; */
     /* text-align: center; */
 }
 
@@ -129,7 +131,9 @@ ul{
 
 .foot-slider{
     z-index: 3000;
-    margin-bottom: auto;
+    width: 100%;
+    margin-top: 96vh;
+    position: fixed;
 }
 
 .second-section{

@@ -18,10 +18,7 @@ a{
 ul{
     list-style-type: none;
 }
-.cont{
-    /* background-color: aqua; */
-    overflow: hidden;
-}
+
 .caret {
    font-size: 1rem;
    display: inline-block;
@@ -37,6 +34,7 @@ ul{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 .buy{
     border: none;
@@ -70,6 +68,47 @@ ul{
     animation-duration: 1s;
 }
 
+.features{
+    margin-top: 5rem;
+    padding: 0 5%;
+    text-align: center;
+}
+
+.feature{
+    margin-bottom: 3rem;
+}
+
+.feature-h{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.feature-icon{
+    font-size: 5rem;
+    margin-top: auto;
+}
+
+.feature-p{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: .5rem;
+}
+
+.para{
+    margin-bottom: 3rem;
+}
+
+.para-h{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.para-p{
+    margin-top: .5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
 #first{
     margin-top: 3rem;
     width: 100%;
@@ -86,6 +125,11 @@ ul{
     width: 90%;
     margin: 2rem auto;
     margin-top: -2rem;
+}
+
+.foot-slider{
+    z-index: 3000;
+    margin-bottom: auto;
 }
 
 .second-section{
@@ -111,7 +155,6 @@ ul{
 }
 
 .head{
-    margin-top: 1rem;
     width: 100%;
     background: transparent;
     z-index: 10;
@@ -175,6 +218,14 @@ ul{
     background:transparent;
     align-content: center;
     padding-top: 100px;
+}
+
+.market-info{
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
 }
 
 .mini{
@@ -343,7 +394,42 @@ ul{
         margin: auto;
     }
 }
+
+@media (min-width:700px){
+    .features{
+        width: 80%;
+        margin: auto;
+        margin-top: 5rem;
+    }
+}
+
 @media (min-width:850px){
+    .para{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+    .para-h{
+        font-size: 2.5rem;
+    }
+    .features{
+        width: 100%;
+    }
+    .feature-list{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        align-items: flex-start;
+        text-align: center;
+    }
+    .feature{
+        text-align: center;
+        width: 30%;
+        margin: auto;
+    }
+    .feature-h{
+        font-size: 1.5rem;
+    }
     .first-section{
         width: 95%;
         margin-top: -4rem;
@@ -426,12 +512,12 @@ ul{
         font-size: 1.2rem;
     }
     .main-section{
-        width: 80%;
+        width: 90%;
     }
 }
 @media (min-width:1700px){
     body{
-        padding: 0 15%;
+        padding: 0 8%;
         text-align: center;
     }
     .side-navigation{
@@ -443,7 +529,7 @@ ul{
         /* background-color: aqua; */
     }
     .main-section{
-        width: 85%;
+        width: 90%;
     }
     .side-navigation.active{
         transition: 1s linear;

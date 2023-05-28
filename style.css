@@ -37,6 +37,45 @@ ul{
     -webkit-text-fill-color: transparent;
 }
 
+.invest{
+    text-align: center;
+}
+
+.invest-section{
+    margin-top: 4rem;
+}
+
+.plan-name{
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.duration{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.pcent{
+    font-size: 2rem;
+}
+
+.hr{
+    margin-top: -1rem;
+}
+
+.plan{
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    margin: auto;
+    width: 90%;
+    background-color: rgba(105,105,105, 0.4);
+    margin-bottom: 2rem;
+}
 
 .buy{
     border: none;
@@ -56,8 +95,33 @@ ul{
     padding-left: 1rem;
 }
 
+.refer{
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+}
+
+.min{
+    margin-bottom: 1rem;
+}
+
 .price {
+    background: linear-gradient(90deg, lightblue, blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    padding-left: .5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: .9rem;
+}
+
+.plan-info{
+    /* display: inline-block; */
+    /* background-color: aquamarine; */
+    width: 80%;
     padding-left: 1rem;
+    text-align: center;
 }
 
 .dropdown{
@@ -520,6 +584,13 @@ ul{
     }
 }
 @media (min-width:1700px){
+    .plan{
+        width: 40%;
+        display: inline-block;
+    }
+    .plan-info{
+        width: 100%;
+    }
     body{
         padding: 0 8%;
         text-align: center;

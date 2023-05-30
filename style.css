@@ -8,7 +8,7 @@ body{
     height: 100vh;
     background-size: cover;
     background-position: center;
-    display: flex;
+    /* display: flex; */
     /* flex-direction: column; */
     /* text-align: center; */
 }

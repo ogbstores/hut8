@@ -30,6 +30,11 @@ ul{
     margin-right: 0.5rem;
 }
 
+.dash-big-icon{
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
 .dashboard div .overview{
     font-family: 'Montserrat', sans-serif;
     margin-top: .5rem;
@@ -41,6 +46,16 @@ ul{
     display: inline-block;
     border-radius: 1rem;
     width: 49%;
+    background-color: rgba(105,105,105, 0.1);
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.dash-big-box{
+    display: inline-block;
+    border-radius: 1rem;
+    width: 100%;
     background-color: rgba(105,105,105, 0.4);
     padding-left: 1rem;
     padding-bottom: 0.5rem;
@@ -54,9 +69,21 @@ ul{
     font-size: 0.7rem;
 }
 
+.dash-big-info{
+    padding-top: .3rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
 .dash-value{
-    font-weight: 900;
+    font-weight: 500;
     font-size: 2rem;
+}
+
+.dash-big-value{
+    font-weight: 500;
+    font-size: 2.2rem;
 }
 
 .caret {
@@ -323,6 +350,7 @@ ul{
     background:transparent;
     align-content: center;
     padding-top: 0px;
+    margin-bottom: 2rem;
 }
 
 .market-info{

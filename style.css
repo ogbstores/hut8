@@ -336,6 +336,44 @@ ul{
     text-align: end;
 }
 
+.address{
+    line-height: 1rem;
+}
+
+.footer{
+    padding: 5%;
+    width: 100%;
+    margin: auto;
+    font-size: small;
+    background-color: #333;
+}
+
+.foot-head{
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.foot-item{
+    margin-bottom: 2rem;
+    vertical-align: top;
+    /* background-color: aqua; */
+}
+
+.foot-list{
+    line-height: 0.5rem;
+}
+
+.footer .bi{
+    margin-right: 1rem;
+}
+
+.foot-logo{
+    width: 100%;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
 .logo{
     width: 100%;
     text-align: center;
@@ -540,6 +578,11 @@ ul{
 }
 
 @media (min-width:850px){
+    .foot-item{
+        display: inline-block;
+        width: 20%;
+        margin-bottom: 0;
+    }
     .para{
         width: 70%;
         margin: auto;
@@ -552,16 +595,14 @@ ul{
         width: 100%;
     }
     .feature-list{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        align-items: flex-start;
         text-align: center;
     }
     .feature{
+        display: inline-block;
         text-align: center;
         width: 30%;
         margin: auto;
+        vertical-align: top;
     }
     .feature-h{
         font-size: 1.5rem;

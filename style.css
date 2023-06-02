@@ -22,6 +22,14 @@ ul{
     list-style-type: none;
 }
 
+.fas{
+    margin-right: 1rem;
+}
+
+.widget{
+    margin-bottom: 1rem;
+}
+
 .dashboard{
     width: 90%;
     margin: auto;
@@ -180,6 +188,25 @@ ul{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: .9rem;
+}
+
+.num{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+    padding-left: .5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: .9rem;
+}
+
+.news{
+    margin-bottom: 2rem;
+}
+
+.step-icon{
+    font-size: 3rem;
 }
 
 .plan-info{
@@ -407,6 +434,7 @@ ul{
     -moz-box-shadow: 0 10px 6px -6px #333;
     box-shadow: 0 10px 6px -6px #333;
     display: none;
+    text-align: left;
 }
 
 .mini .active{
